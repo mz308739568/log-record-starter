@@ -13,9 +13,15 @@ public @interface AuthineLog {
      **/
      String desc() default "";
 
+
     /**
-     * 应用名称表达式
+     * 请求入参参数
      */
-    String appNameEl() default "";
+    String[] panamaArgs() default "";
+
+    /**
+     * 请求出参参数
+     */
+    String[] returnArgs() default "";
 
 }
